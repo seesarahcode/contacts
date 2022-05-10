@@ -1,0 +1,57 @@
+<div id="<%= dom_id contact %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">First name:</strong>
+    <%= contact.first_name %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Last name:</strong>
+    <%= contact.last_name %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Email:</strong>
+    <%= contact.email %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Phone:</strong>
+    <%= contact.phone %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Street address:</strong>
+    <%= contact.street_address %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">City:</strong>
+    <%= contact.city %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">State:</strong>
+    <%= contact.state %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Zip code:</strong>
+    <%= contact.zip_code %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Birthday:</strong>
+    <%= contact.birthday %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Note:</strong>
+    <%= contact.note %>
+  </p>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this contact", contact, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to 'Edit this contact', edit_contact_path(contact), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>
