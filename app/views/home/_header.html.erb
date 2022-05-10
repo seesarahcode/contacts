@@ -12,6 +12,13 @@
       <li>
         <%= link_to "Add Contact", new_contact_path, class:"nav-link block pr-2 lg:px-2 py-2 text-gray-500 transition colors hover:text-gray-900 focus:text-gray-700 transition duration-150 ease-in-out" %>
       </li>
+      <li>
+        <%= link_to "Sign In", sign_in_path, class:"nav-link block pr-2 lg:px-2 py-2 text-gray-500 transition colors hover:text-gray-900 focus:text-gray-700 transition duration-150 ease-in-out" %>
+      </li>
+      <li>
+        <%= link_to "Sign up", sign_up_path, class:"nav-link block pr-2 lg:px-2 py-2 text-gray-500 transition colors hover:text-gray-900 focus:text-gray-700 transition duration-150 ease-in-out" %>
+      </li>
+      <div class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white shadow bg-green-600 transition colors hover:bg-green-700" ><%= button_to "Logout",  logout_path, method: :delete %></div>
     </ul>
     <button class="block md:hidden py-3 px-4 mx-2 rounded focus:outline-none hover:bg-gray-200 group"> 
       <div class="w-5 h-1 bg-gray-600 mb-1"></div>
