@@ -11,6 +11,9 @@ module.exports = {
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },
+      display: ['group-focus'],
+      opacity: ['group-focus'],
+      inset: ['group-focus']
     },
   },
   plugins: [

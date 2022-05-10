@@ -1,0 +1,25 @@
+<nav class="fixed top-0 left-0 bg-white w-full shadow">
+  <div class="container m-auto flex justify-between items-center text-gray-700">
+    <h1 class="pl-8 py-4 text-xl font-bold">ADDRESS BOOK</h1>
+    <ul class="hidden md:flex items-center pr-10 text-base font-semibold cursor-pointer">
+      <li>
+        <%= link_to "Home", root_path, class:"nav-link block pr-2 lg:px-2 py-2 text-gray-600 hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out" %>
+      </li>
+      
+    </ul>
+    <button class="block md:hidden py-3 px-4 mx-2 rounded focus:outline-none hover:bg-gray-200 group"> 
+      <div class="w-5 h-1 bg-gray-600 mb-1"></div>
+      <div class="w-5 h-1 bg-gray-600 mb-1"></div>
+      <div class="w-5 h-1 bg-gray-600"></div>
+      <div class="absolute top-0 -right-full h-screen w-8/12 bg-white border opacity-0
+      group-focus:right-0 group-focus:opacity-100 transition-all duration-300">
+        <ul class="flex flex-col items-center w-full text-base cursor-pointer pt-10">
+          <li>
+            <%= link_to "Home", root_path, class:"nav-link block pr-2 lg:px-2 py-2 text-gray-600 hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out" %>
+          </li>
+          
+        </ul>
+      </div>
+    </button>
+  </div>
+</nav>
